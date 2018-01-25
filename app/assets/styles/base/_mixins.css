@@ -15,3 +15,11 @@
     @mixin-content;
   }
 }
+
+@define-mixin clearfix{
+  &::after{ /* create element for clear*/
+    content: "";
+    clear:both;
+    display: table; /* for better browser support*/
+  }
+}
