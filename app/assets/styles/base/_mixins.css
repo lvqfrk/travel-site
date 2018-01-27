@@ -11,7 +11,7 @@
 }
 
 @define-mixin atLarge{
-  @media(min-width: 1200px){
+  @media(min-width: 1010px){
     @mixin-content;
   }
 }
@@ -20,6 +20,6 @@
   &::after{ /* create element for clear*/
     content: "";
     clear:both;
-    display: table; /* for better browser support*/
+    display: table; /* for better browsers support*/
   }
 }
